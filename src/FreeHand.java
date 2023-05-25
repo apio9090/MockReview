@@ -15,7 +15,7 @@ import java.util.Vector;
  *
  * @author adp5384
  */
-public class FreeHand extends Shape implements Serializable{
+public class FreeHand extends Shape{
     @Override
     public void drawDashed(Graphics2D g2d, BasicStroke bs){
         if (!isG) {

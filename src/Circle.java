@@ -21,7 +21,7 @@ import javax.imageio.ImageIO;
  *
  * @author adp5384
  */
-public class Circle extends Shape implements Serializable {
+public class Circle extends Shape {
 
     public void drawDashed(Graphics2D g2d, BasicStroke bs) {
         if (!isG) {

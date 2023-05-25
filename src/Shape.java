@@ -1,4 +1,3 @@
-
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -18,18 +17,15 @@ import java.io.Serializable;
  *
  * @author adp5384
  */
-public abstract class Shape implements Serializable{
-
+public abstract class Shape implements Serializable, IShape{
+    public Color co;                                                                   //init color
+    public Shape s2;                                                                   //create shape obj
+    public Boolean isD, isF, isG, isT;
+    public File f;
+    
     int x, y, h, w, lox, loy, lnx, lny;                                            //initialize variables
-    static Color co;                                                                   //init color
-    static Shape s2;                                                                   //create shape obj
-    static Boolean isD, isF, isG, isT;
-    static String text;
     TexturePaint tp;
-    static File f;
     BufferedImage buffI;
-
-    public abstract void draw(Graphics2D g2d, BasicStroke bs);                                                //abstract draw
-    public abstract void drawDashed(Graphics2D g2d, BasicStroke bs);                                          //abstract drawDashed]                                        //abstract drawDashed
+                              
 
 }
